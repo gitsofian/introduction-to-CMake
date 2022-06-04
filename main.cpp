@@ -1,5 +1,7 @@
 #include <iostream>
 #include <concepts>
+#include "dog.h"
+#include "operations.h"
 
 template <typename T>
 requires std::integral<T>
@@ -15,5 +17,11 @@ int main()
     std::cout << "The sum is : " << add(4, 4) << std::endl;
     std::cout << "The sum is : " << add(14, 14) << std::endl;
 
+    Dog dog1("Flitzy");
+    dog1.print_info();
+
     return EXIT_SUCCESS;
 }
+
+
+    
